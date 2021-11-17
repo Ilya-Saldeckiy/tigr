@@ -1,0 +1,530 @@
+/* Общие стили */
+
+html{
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+	outline: 0;
+	box-shadow: none;
+}
+
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family:'Manrope',sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+    line-height: 32px;
+    color: #000000;
+}
+
+a{
+    text-decoration: none;
+    color: #cef4ff;
+}
+
+img{
+	max-width: 100%;
+}
+
+input{
+    color: #000000;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li{
+    margin: 0;
+}
+
+.list-reset{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    width: 1232px;
+    padding: 0;
+}
+
+@media (min-width: 1200px) {
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
+		max-width: 1232px;
+	}
+}
+
+/*.small-container{*/
+/*    width: 1056px;*/
+/*    margin: 0 auto;*/
+/*    padding: 0;*/
+/*}*/
+
+.main-caption{
+    text-align: center;
+		font-size: 40px;
+		line-height: 56px;
+		font-weight: 700;
+		color: #000000;
+		margin-bottom: 54px;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+		background: none;
+		width: auto;
+		height: auto;
+}
+
+.vpc,.nowrap{
+    white-space: nowrap;
+}
+
+/* .btn:hover{
+    background-color: #18bbf0;
+    transition: background-color .3s ease-in-out;
+} */
+
+.hidden-caption{
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border:  0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+
+/* Стили шапки */
+
+.header-section{
+    padding-top: 40px;
+    background: url('../img/header_bg.jpg') no-repeat;
+    background-position: bottom right;
+    padding-bottom: 0px;
+		padding-left: 133px;
+		height: 100%;
+	background-size: auto 100%;
+}
+
+.header-phone-position a{
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #8393ab;
+}
+
+.header-container{
+    display: flex;
+	align-items: center;
+}
+
+.logo{
+    margin-right: 0;
+		margin-bottom: 140px;
+		height: 42px;
+}
+
+.logo_mob{
+	display: none;
+}
+
+.menu-list-item a{
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #8393ab;
+}
+
+.fixed__btn{
+	width: 239px;
+	height: 48px;
+	border-radius: 24px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #ffffff;
+	display: none;
+	background-color: #00a9e0;
+}
+
+.fixed-active{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+		padding-top: 16px;
+		padding-bottom: 16px;
+    z-index: 5;
+    background-color: #003594;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25)
+}
+
+
+.menu-list{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.menu-list-item:not(:last-child){
+    margin-right: 40px;
+}
+
+.menu-list-item{
+    transition: color .3s ease-in-out;
+}
+
+.menu-list-item a:hover{
+    color: #003594;
+}
+
+/* .phone-link a:hover{
+    color: #000000;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+} */
+
+/* .list-position-phone{
+    margin-right: 223px;
+} */
+
+.promo{
+    white-space: nowrap;
+}
+
+.researches-link:hover{
+    text-decoration: underline;
+}
+
+.header-phone-position{
+    margin-left: auto;
+    margin-right: 0px;
+    position: relative;
+    top: 5px;
+}
+
+.header-caption{
+	font-size: 64px;
+	line-height: 72px;
+	font-weight: 700;
+	color: #003594;
+	width: 450px;
+	margin-bottom: 58px;
+}
+
+.header__text{
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #000000;
+	width: 566px;
+	margin-bottom: 20px;
+}
+
+.last{
+	margin-bottom: 75px;
+}
+
+.header__text span{
+	font-weight: 700;
+}
+
+.header__form{
+	display: flex;
+}
+
+.header__input{
+	width: 272px;
+	height: 48px;
+	font-weight: 400;
+	border: 1px solid #aaaaaa;
+	font-size: 23.6px;
+	color: black;
+	padding-left: 24px;
+	padding-right: 16px;
+	margin-right: 40px;
+	outline: none;
+}
+
+.header__btn{
+	width: 256px;
+	height: 48px;
+	background-color: #00a9e0;
+	border-radius: 24px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #ffffff;
+	border: none;
+	outline: none;
+	margin-bottom: 120px;
+}
+
+.header__input::placeholder{
+	font-size: 23.6px;
+	line-height: 94px;
+	font-weight: 400;
+	color: #777777;
+}
+
+.lower__text{
+	opacity: 0.5;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #000000;
+padding-bottom: 50px;
+	/*position: absolute;*/
+	/*bottom: 70px;*/
+}
+
+
+.header__modal-btn:hover,.header__modal-btn:focus,.header__modal-btn:active{
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: unset;
+	outline: none;
+	border: none;
+}
+
+/*.btn__record:hover{*/
+/*    background-color: #18bbf0;*/
+/*}*/
+
+/* .cart-btn{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: url('../img/ico_cart_blue.svg') 50% no-repeat;
+    position: relative;
+    top: 9px;
+    left: 0px;
+} */
+
+.btn-position-header{
+    position: relative;
+}
+
+.recomend-text{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #dadada;
+    margin: 0;
+}
+
+.footer-recomend{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.chesel-row{
+    background: rgba(248, 248, 248, 0.96);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    font-size: 1.54vw;
+    z-index: 3;
+    bottom: 0;
+    color: #d2d2d2;
+    width: 100%;
+    line-height: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+    transform: scaleY(1.5);
+    transform-origin: bottom;
+}
+
+.footer{
+    margin-top: 0px;
+}
+
+.second-logo{
+	display: none;
+}
+
+.mobile__open{
+	display: none;
+}
+
+.mobile__disable{
+	display: block;
+}
+
+
+
+/* Адаптив */
+
+@media (max-width: 767px){
+    .container{
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 100%;
+    }
+
+    img{
+        max-width: 144px;
+    }
+
+    .header-section{
+        padding-bottom: 138px;
+    }
+
+	.advantages_card:nth-child(2n) {
+		margin-right: auto;
+	}
+
+	.header-section {
+		background: url("../img/header_bg_mob.jpg") 50% 100% no-repeat;
+		background-color: #00a9e0;
+		padding-bottom: 75%;
+		background-size: 100% auto;
+		padding-top: 24px;
+		padding-left: 16px;
+		padding-right: 16px;
+		margin-bottom: 59px;
+	}
+
+	.logo{
+		display: none;
+		margin: 0 auto;
+		margin-bottom: 59px;
+	}
+
+	.second-logo{
+		display: block;
+	}
+
+	.mobile__open{
+		display: block;
+	}
+
+	.mobile__disable{
+		display: none;
+	}
+
+	.header-caption{
+		margin: 0 auto;
+		font-size: 36px;
+		line-height: 40px;
+		font-weight: 700;
+		color: #ffffff;
+		width: 240px;
+		margin-bottom: 43px;
+		padding-top: 0;
+		text-align: center;
+	}
+
+	.header__text{
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 400;
+		color: #000000;
+		width: 100%;
+	}
+
+	.padding{
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	.last{
+		margin-bottom: 51px;
+	}
+
+	.header__form{
+		margin: 0 auto;
+		flex-direction: column;
+		justify-content: center;
+		width: 272px;
+	}
+
+	.header__input{
+		width: 100%;
+		margin-bottom: 32px;
+	}
+
+	.header__btn{
+		width: 100%;
+		margin-bottom: 58px;
+	}
+
+	.lower__text{
+		margin: 0 auto;
+		opacity: 0.5;
+		font-size: 12px;
+		line-height: 16px;
+		font-weight: 400;
+		color: #000000;
+		width: 236px;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	.header-caption_decoration{
+		font-size: 24px;
+		color: #00b388;
+	}
+
+    .header-subtitle_decoration{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
+    }
+
+    .header-subtitle{
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 400;
+			margin: 0 auto;
+			margin-bottom: 43px;
+			width: 274px;
+			text-align: center;
+    }
+
+	.header_btn-form{
+		width: 240px;
+		height: 48px;
+		padding-left: 45px;
+		padding-right: 45px;
+		line-height: 18px;
+	}
+
+
+    .recomended__text{
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 37px;
+    }
+
+    .recomend-text{
+        font-size: 1.54vw;
+    }
+}
+

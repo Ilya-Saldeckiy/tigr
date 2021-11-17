@@ -1,0 +1,139 @@
+.modal-header{
+	border: none;
+}
+
+.modal-dialog {
+	width: 432px;
+	margin-top: 136px;
+}
+
+.modal-content{
+	padding-left: 40px;
+	padding-top: 37px;
+	padding-bottom: 40px;
+	padding-right: 40px;
+}
+
+.modal-close-btn{
+	width: 18px;
+	height: 18px;
+	outline: none;
+	border: none !important;
+	background: url("../img/ico_x.svg") no-repeat !important;
+	background-size: cover !important;
+	position: absolute;
+	top: 27px;
+	right: 27px;
+}
+
+.modal-title{
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #000000;
+	margin-bottom: 39px;
+}
+
+.form-floating>.modal__input{
+	width: 100%;
+}
+
+.modal-floating{
+	margin-right: 0;
+	margin-bottom: 24px;
+}
+
+.modal-floating:nth-last-of-type(-n+2){
+	margin-bottom: 24px;
+}
+
+.modal-floating:nth-last-of-type(-n+1){
+	margin-bottom: 32px;
+}
+
+.modal__submit-btn{
+	width: 352px;
+	height: 56px;
+	background-color: #00a9e0;
+	border-radius: 28px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.modal__results{
+	display: none;
+	text-align: center;
+}
+
+.modal__result-active .modal__form{
+	display: none;
+}
+
+.modal__result-active .modal__results{
+	display: block;
+}
+
+.modal__result-img{
+	width: 120px;
+	height: 120px;
+	margin-bottom: 34px;
+}
+
+.modal__result-text{
+	font-size: 18px;
+	line-height: 32px;
+	font-weight: 600;
+	color: #00b388;
+}
+
+
+@media (max-width: 767px){
+	.modal{
+		padding-left: 8px !important;
+		padding-right: 8px;
+	}
+
+	.modal-dialog {
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+		margin-top: 65px;
+	}
+
+	.modal-content {
+		padding-left: 24px;
+		padding-top: 24px;
+		padding-bottom: 32px;
+		padding-right: 24px;
+	}
+
+	.modal-close-btn{
+		top: 19px;
+		right: 19px;
+		padding: 0;
+		background-size: 21px !important;
+	}
+
+	.modal__submit-btn{
+		width: 100%;
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 600;
+	}
+
+	.modal-title{
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.modal-close-btn{
+		-webkit-background-size: 18px !important;
+	}
+
+
+
+}
+
+

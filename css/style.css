@@ -416,9 +416,19 @@ li {
 
 /* Адаптив */
 
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) {
 	.header-section {
 		padding-left: 16px;
+	}
+
+	.header-caption-position {
+		width: 50%;
+		padding-right: 48px;
+	}
+
+	.header-section {
+		background: url("../img/header_bg.jpg") 100% 50% no-repeat;
+		background-color: white;
 	}
 }
 

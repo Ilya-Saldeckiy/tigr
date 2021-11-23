@@ -1,87 +1,118 @@
 <!DOCTYPE html>
 <html lang="ru" xmlns:emailto="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico" type="img/x-icon"/>
-    <meta name="keywords" content="анализы, медицинские исследования">
-    <meta name="description" content="Анализы в Москве, Подмосковье, в городах России">
-    <title>CMD Центр Молекулярной Диагностики. Медицинская лаборатория 8 (800) 707 788 1 </title>
-    <link rel="stylesheet" href="css/normalize.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preload" href="font/manrope-regular.ttf" as="font">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="img/x-icon" />
+	<meta name="keywords" content="анализы, медицинские исследования">
+	<meta name="description" content="Анализы в Москве, Подмосковье, в городах России">
+	<title>CMD Центр Молекулярной Диагностики. Медицинская лаборатория 8 (800) 707 788 1 </title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preload" href="font/manrope-regular.ttf" as="font">
 	<link rel="preload" href="font/manrope-semibold.ttf" as="font">
-    <link rel="preload" href="font/manrope-bold.ttf" as="font">
-    <link rel="stylesheet" href="css/modal.css">
+	<link rel="preload" href="font/manrope-bold.ttf" as="font">
+	<link rel="stylesheet" href="css/modal.css">
 	<!-- JavaScript Bundle with Popper -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/iquery-ui.js"></script>
-	<script type='text/javascript' src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/iquery-ui.js"></script>
+	<script type='text/javascript'
+		src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
 </head>
+
 <body>
-    <section class="header-section">
-        <div class="header-section-fixed">
-                <div class="header-container">
-                    <h1 class="hidden-caption">CMD Центр Молекулярной Диагностики</h1>
-                    <a class="logo" href="https://www.cmd-online.ru/" target="_blank"><img src="img/logo.svg" alt="Логотип"></a>
-									<a class="logo second-logo" href="https://www.cmd-online.ru/" target="_blank"><img src="img/logo_second.png" alt="Логотип"></a>
-                </div>
-        </div>
-        <header>
-<!--					Вывод промокода осуществляется путём добавления к каждому классу result, класса сode-active-->
-            <div class="result header-caption-position">
-                <h2 class="header-caption">Помоги Тусё спасти мир!</h2>
-							<div class="mobile__disable">
-								<p class="header__text">
-									Сдай анализы в сети офисов CMD и получи возможность перейти на следующий уровень, где тигр Тусё ждет твоей помощи, чтобы спасти мир!
-								</p>
-								<p class="header__text last">
-									Для этого введи в поле <span class="text__decoration">номер договора</span> и получи  <span class="text__decoration">промокод</span>, введи код в специальном окне и продолжи борьбу с вирусами
-								</p>
-								<div class="copy__block">
-									<div id="copytext1">
-										<p class="code">PV137</p>
-									</div>
-									<button class="copy__btn" onclick="copytext('#copytext1')">Скопировать</button>
-								</div>
-								<form class="header__form">
-									<input class="header__input" type="text" placeholder="№ договора">
-									<button class="header__btn">Получить промокод</button>
-								</form>
-								<p class="lower__text">© 2021, ФБУН Центральный НИИ эпидемиологии Роспотребнадзора</p>
-							</div>
-            </div>
-        </header>
-    </section>
-		<main class="result code-active mobile__open">
-			<div class="padding">
-				<p class="header__text">
-					Сдай анализы в сети офисов CMD и получи возможность перейти на следующий уровень, где тигр Тусё ждет твоей помощи, чтобы спасти мир!
-				</p>
-				<p class="header__text last">
-					Для этого введи в поле <span class="text__decoration">номер договора</span> и получи  <span class="text__decoration">промокод</span>, введи код в специальном окне и продолжи борьбу с вирусами
-				</p>
-				<div class="copy__block">
-					<p class="code">PV137</p>
-					<button class="copy__btn">Скопировать</button>
-				</div>
-				<form class="header__form">
-					<input class="header__input" type="text" placeholder="№ договора">
-					<button class="header__btn">Получить промокод</button>
-				</form>
-				<p class="lower__text">© 2021, ФБУН Центральный НИИ эпидемиологии Роспотребнадзора</p>
+	<section class="header-section">
+		<div class="header-section-fixed">
+			<div class="header-container">
+				<h1 class="hidden-caption">CMD Центр Молекулярной Диагностики</h1>
+				<a class="logo" href="https://www.cmd-online.ru/" target="_blank"><img src="img/logo.svg"
+						alt="Логотип центра молекулярной диагностики"></a>
+				<a class="logo second-logo" href="https://www.cmd-online.ru/" target="_blank"><img
+						src="img/logo_mob.svg" alt="Логотип"></a>
 			</div>
-		</main>
-        <footer>
-            <section class="footer-recomend recomend-text">
-                <div class="chesel-row">
-                    <div>О&nbsp;возможных противопоказаниях необходимо проконсультироваться со&nbsp;специалистом</div>
-                </div>
-            </section>
-        </footer>
-        <script src="js/main.js"></script>
+		</div>
+		<header>
+			<!-- Вывод промокода осуществляется путём добавления к каждому классу result, класса сode-active -->
+			<div class="result header-caption-position">
+				<h2 class="header-caption">Помоги Тусё спасти мир!</h2>
+				<div class="mobile__disable">
+					<p class="header__text">
+						Сдай анализы в&nbsp;сети офисов CMD и&nbsp;получи возможность перейти на&nbsp;следующий уровень,
+						где тигр Тусё ждет твоей помощи, чтобы спасти мир!
+					</p>
+					<p class="header__text last">
+						Для этого введи в&nbsp;поле <span class="text__decoration">номер договора</span> и&nbsp;получи
+						<span class="text__decoration">промокод</span>, введи код в&nbsp;специальном окне
+						и&nbsp;продолжи борьбу с&nbsp;вирусами.
+					</p>
+					<div class="copy__block">
+						<div id="copytext1">
+							<p class="code">PV137</p>
+						</div>
+						<button class="copy__btn" onclick="copytext('#copytext1')">Скопировать
+							<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 16 16">
+								<path fill="#00A9E0" d="M14.1,12.4h-0.7v-1.2h0.7c0.3,0,0.6-0.3,0.6-0.6V2.1c0-0.3-0.3-0.6-0.6-0.6H5.6C5.3,1.4,5,1.7,5,2.1v0.4H3.8
+												V2.1c0-1,0.8-1.9,1.9-1.9h8.5c1,0,1.9,0.8,1.9,1.9v8.5C16,11.6,15.2,12.4,14.1,12.4z" />
+								<path fill="#00A9E0" d="M10.4,15.8H1.9c-1,0-1.9-0.8-1.9-1.9V5.5c0-1,0.8-1.9,1.9-1.9h8.5c1,0,1.9,0.8,1.9,1.9v8.5
+												C12.2,15,11.4,15.8,10.4,15.8z M1.9,4.8c-0.3,0-0.6,0.3-0.6,0.6v8.5c0,0.3,0.3,0.6,0.6,0.6h8.5c0.3,0,0.6-0.3,0.6-0.6V5.5
+												c0-0.3-0.3-0.6-0.6-0.6H1.9z" />
+							</svg>
+						</button>
+					</div>
+					<form class="header__form">
+						<input class="header__input" type="text" placeholder="№ договора">
+						<button class="header__btn">Получить промокод</button>
+					</form>
+					<p class="lower__text">&#169; 2021, ФБУН Центральный НИИ эпидемиологии Роспотребнадзора</p>
+				</div>
+			</div>
+		</header>
+	</section>
+	<main class="result code-active mobile__open">
+		<div class="padding">
+			<p class="header__text">
+				Сдай анализы в&nbsp;сети офисов CMD и&nbsp;получи возможность перейти на&nbsp;следующий уровень, где
+				тигр Тусё ждет твоей помощи, чтобы спасти мир!
+			</p>
+			<p class="header__text last">
+				Для этого введи в&nbsp;поле <span class="text__decoration">номер договора</span> и&nbsp;получи <span
+					class="text__decoration">промокод</span>, введи код в&nbsp;специальном окне и&nbsp;продолжи борьбу
+				с&nbsp;вирусами.
+			</p>
+			<div class="copy__block">
+				<p class="code">PV137</p>
+				<button class="copy__btn">Скопировать
+					<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 16 16">
+						<path fill="#00A9E0" d="M14.1,12.4h-0.7v-1.2h0.7c0.3,0,0.6-0.3,0.6-0.6V2.1c0-0.3-0.3-0.6-0.6-0.6H5.6C5.3,1.4,5,1.7,5,2.1v0.4H3.8
+							V2.1c0-1,0.8-1.9,1.9-1.9h8.5c1,0,1.9,0.8,1.9,1.9v8.5C16,11.6,15.2,12.4,14.1,12.4z"/>
+						<path fill="#00A9E0" d="M10.4,15.8H1.9c-1,0-1.9-0.8-1.9-1.9V5.5c0-1,0.8-1.9,1.9-1.9h8.5c1,0,1.9,0.8,1.9,1.9v8.5
+							C12.2,15,11.4,15.8,10.4,15.8z M1.9,4.8c-0.3,0-0.6,0.3-0.6,0.6v8.5c0,0.3,0.3,0.6,0.6,0.6h8.5c0.3,0,0.6-0.3,0.6-0.6V5.5
+							c0-0.3-0.3-0.6-0.6-0.6H1.9z"/>
+					</svg>
+				</button>
+			</div>
+			<form class="header__form">
+				<input class="header__input" type="text" placeholder="№ договора">
+				<button class="header__btn">Получить промокод</button>
+			</form>
+			<p class="lower__text">&#169; 2021, ФБУН Центральный НИИ эпидемиологии Роспотребнадзора</p>
+		</div>
+	</main>
+	<footer>
+		<section class="footer-recomend recomend-text">
+			<div class="chesel-row">
+				<div>О&nbsp;возможных противопоказаниях необходимо проконсультироваться со&nbsp;специалистом</div>
+			</div>
+		</section>
+	</footer>
+	<script src="js/main.js"></script>
 </body>
+
 </html>

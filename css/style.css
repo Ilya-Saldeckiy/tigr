@@ -439,7 +439,7 @@ li {
 
 .active .copy__block {
 	display: flex;
-	margin-bottom: 120px;
+	margin-bottom: 0px;
 }
 
 .active .header__form {
@@ -515,7 +515,7 @@ li {
 	.copy__block {
 		text-align: center;
 		margin: 0 auto;
-		margin-bottom: 58px;
+		margin-bottom: 0px;
 		width: 146px;
 		flex-direction: column;
 	}

@@ -25,9 +25,10 @@
 	<script src="js/iquery-ui.js"></script>
 	<script type='text/javascript'
 		src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.4.0/clipboard.min.js"></script>
 </head>
 
-<body class="">
+<body class="active">
 	<section class="main-section d-flex">
 		<div class="block-text">
 			<div class="header-section-fixed">
@@ -40,7 +41,6 @@
 				</div>
 			</div>
 			<header>
-				<!-- Вывод промокода осуществляется путём добавления к каждому классу result, класса сode-active -->
 				<div class="result header-caption-position">
 					<h2 class="header-caption">Помоги Тусё спасти мир!</h2>
 					<div class="mobile__disable">
@@ -54,10 +54,8 @@
 							и&nbsp;продолжи борьбу с&nbsp;вирусами.
 						</p>
 						<div class="copy__block">
-							<div id="copytext1">
-								<p class="code">PV137</p>
-							</div>
-							<button class="copy__btn" onclick="copytext('#copytext1')">Скопировать
+								<p class="code" id="copytext1">PV137</p>
+							<button class="copy__btn btn-clipboard" data-clipboard-target="#copytext1">Скопировать
 								<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 16 16">
 									<path fill="#00A9E0" d="M14.1,12.4h-0.7v-1.2h0.7c0.3,0,0.6-0.3,0.6-0.6V2.1c0-0.3-0.3-0.6-0.6-0.6H5.6C5.3,1.4,5,1.7,5,2.1v0.4H3.8
 												V2.1c0-1,0.8-1.9,1.9-1.9h8.5c1,0,1.9,0.8,1.9,1.9v8.5C16,11.6,15.2,12.4,14.1,12.4z" />
@@ -90,8 +88,8 @@
 				с&nbsp;вирусами.
 			</p>
 			<div class="copy__block">
-				<p class="code">PV137</p>
-				<button class="copy__btn">Скопировать
+					<p class="code" id="copytext2">PV137</p>
+				<button class="copy__btn btn-clipboard" data-clipboard-target="#copytext2">Скопировать
 					<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 16 16">
 						<path fill="#00A9E0" d="M14.1,12.4h-0.7v-1.2h0.7c0.3,0,0.6-0.3,0.6-0.6V2.1c0-0.3-0.3-0.6-0.6-0.6H5.6C5.3,1.4,5,1.7,5,2.1v0.4H3.8
 							V2.1c0-1,0.8-1.9,1.9-1.9h8.5c1,0,1.9,0.8,1.9,1.9v8.5C16,11.6,15.2,12.4,14.1,12.4z"/>

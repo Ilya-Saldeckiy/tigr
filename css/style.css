@@ -129,6 +129,7 @@ li {
 	z-index: 0;
 	background: url("../img/header_bg.jpg") no-repeat;
 	background-size: cover;
+	background-color: #00a9e0;
 }
 
 /* .btn:hover{
@@ -485,7 +486,7 @@ li {
 		display: block;
 		background-position: bottom center;
 		background-size: 100% auto;
-		padding-bottom: 75%;
+		padding-bottom: 80%;
 		margin-bottom: 59px;
 	}
 
@@ -697,6 +698,10 @@ li {
 		margin-bottom: 43px;
 		padding-top: 0;
 		text-align: center;
+	}
+
+	.code{
+		margin-bottom: 32px;
 	}
 
 	.header__text {

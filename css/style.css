@@ -449,6 +449,32 @@ li {
 
 /* Адаптив */
 
+@media (max-height: 750px) {
+	.logo{
+		position: relative;
+		margin-bottom: 32px;
+		top: 0;
+	}
+
+	.background{
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 700px;
+	}
+
+	.block-text{
+		position: absolute;
+		top: 0;
+	}
+
+	.lower__text{
+		position: relative;
+		bottom: 0;
+		margin-top: 32px;
+	}
+}
+
 @media (min-width: 1280px) {
 	.main-section{
 		padding-left: 7%;
@@ -478,6 +504,11 @@ li {
 		padding-left: 16px;
 		padding-right: 16px;
 		width: 100%;
+	}
+
+	.block-text {
+		 position: relative;
+		 top: 0;
 	}
 
 	.main-section {
